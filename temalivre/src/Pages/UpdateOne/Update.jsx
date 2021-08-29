@@ -115,7 +115,7 @@ export default function Update(props) {
         <S.Label>Add more contracts</S.Label>
         <S.Plus onClick={() => setContract(contract.concat(""))}>+</S.Plus> */}
 
-        { contract.map((value,i)=>(
+{ contract.map((value,i)=>(
           <>
           <S.Label htmlFor="contract">Contract{i+1}</S.Label>
           <S.Select value={value} key={i} id="contract" onChange={e => setContract(contract.map((value,j)=>{
@@ -128,19 +128,27 @@ export default function Update(props) {
             <option value="Chainsaw Devil">Chainsaw Devil</option>
             <option value="Blood Devil">Blood Devil</option>
             <option value="Claw Devil">Claw Devil</option>
+            <option value="Control Devil">Control Devil</option>
             <option value="Curse Devil">Curse Devil</option>
             <option value="Darkness Devil">Darkness Devil</option>
+            <option value="Doll Devil">Doll Devil</option>
             <option value="Fox Devil">Fox Devil</option>
+            <option value="Future Devil">Future Devil</option>
             <option value="Ghost Devil">Ghost Devil</option>
             <option value="Gun Devil">Gun Devil</option>
             <option value="Hell Devil">Hell Devil</option>
             <option value="Knife Devil">Knife Devil</option>
+            <option value="Mantis Devil">Mantis Devil</option>
             <option value="Mold Devil">Mold Devil</option>
+            <option value="Needle Devil">Needle Devil</option>
             <option value="Octopus Devil">Octopus Devil</option>
             <option value="Punishment Devil">Punishment Devil</option>
             <option value="Skin Devil">Skin Devil</option>
             <option value="Snake Devil">Snake Devil</option>
             <option value="Stone Devil">Stone Devil</option>
+            <option value="Fox Devil">Eternity Devil</option>
+            <option value="Zombie Devil">Zombie Devil</option>
+
   
           </S.Select>
           

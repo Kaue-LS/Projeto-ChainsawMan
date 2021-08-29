@@ -1,8 +1,9 @@
+import { useState } from 'react';
 import { useHistory } from 'react-router-dom'
 import * as S from './styled'
 export default function ReadOne(props){
 
-
+ const[mostrar,setMostrar] = useState('Show Status')
     const item = props.location.state
     // const [loading,setLoading] = useState(false)
 
@@ -22,17 +23,38 @@ export default function ReadOne(props){
     }
 
     return(
+        <S.FormImg className='plain'>
+
         <S.Form>
+        <S.Character>
             <S.Image src={item.url}/>
             <S.Label>{item.name}</S.Label>
-            <S.Info>Status: <span>{item.status}</span></S.Info>
-            <S.Info>Genre: <span>{item.genre}</span></S.Info>
-            <S.Info>Specie: <span>{item.specie}</span></S.Info>
-            <S.Info>Contract: <span>{item.contract}</span></S.Info>
-
-            <S.Button onClick={updateHandler}>Edit</S.Button>
-            <S.Button onClick={deleteHandler}>Delete</S.Button>
-
+        </S.Character>
+            <S.Desc>
+            <S.Info>Status:   <S.ShowButton onClick={()=> setMostrar(item.status)}>
+            {
+                mostrar==='Show Status' ?(
+                 "Show Status" 
+                ):(
+                    item.status 
+                )
+            }
+            </S.ShowButton></S.Info>
+            <S.Info>Genre:    <span>{item.genre}</span></S.Info>
+            <S.Info>Specie:    <span>{item.specie}</span></S.Info>
+            <S.Info>Contract:  
+                 {item.contract.map((e)=>(
+                <S.Contract>-{e}</S.Contract>
+                 ))
+            }
+            </S.Info>
+            
+            </S.Desc>
+            <S.Buttons>
+            <S.EditButton onClick={updateHandler}>Edit</S.EditButton>
+            <S.DeleteButton onClick={deleteHandler}>Delete</S.DeleteButton>
+            </S.Buttons>
         </S.Form>
+        </S.FormImg>
     )
 }

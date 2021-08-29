@@ -32,15 +32,15 @@ export default function DeleteOne(props) {
         <>
         {
           loading ===true ? (<Loading/>):(
-          <>
+          <S.Area className='delete'>
           <Title>Deletar Personagem</Title>
     
-          <S.Text>Você tem certeza que quer deletar o personagem <span>{item.name} </span> ?</S.Text>
+          <S.Text>Você tem certeza que quer deletar o personagem <S.Name>{item.name} </S.Name> ?</S.Text>
           <S.ButtonArea>
             <S.ButtonCancel onClick={goToItem} >Cancelar</S.ButtonCancel>
             <S.ButtonDelete onClick={clickHandler} >Deletar</S.ButtonDelete>
           </S.ButtonArea>
-        </>
+        </S.Area>
           )
         }
       </>

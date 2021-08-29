@@ -3,6 +3,7 @@ import {Paragraph} from '../../Components/Paragraph/styled'
 
 export const Text= styled(Paragraph)`
     text-align:center;
+    background-color: whitesmoke;
 `;
 
 export const ButtonArea =styled.div`
@@ -10,8 +11,11 @@ export const ButtonArea =styled.div`
     justify-content: space-evenly;
     padding:1rem 0;
 `;
+export const Area =styled.div`
+   
+`;
 export const ButtonDelete =styled.button`
-    background-color: #e76a24;
+    background-color: red;
     color:white;
     font-size:1.2rem;
     padding:0.4rem 1rem;
@@ -22,12 +26,12 @@ export const ButtonDelete =styled.button`
     transition:200ms;
 
     &:hover{
-        background-color: #b15019;
+        background-color: darkred;
     }
 `;
 
 export const ButtonCancel =styled.button`
-    background-color: #e76a24;
+background-color: green;
     color:white;
     font-size:1.2rem;
     padding:0.4rem 1rem;
@@ -38,7 +42,7 @@ export const ButtonCancel =styled.button`
     transition:200ms;
 
     &:hover{
-        background-color: #b15019;
+        background-color: darkgreen;
     }
 `;
 

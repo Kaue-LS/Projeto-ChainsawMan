@@ -12,19 +12,19 @@ export default function Navbar() {
 
       <S.List>
         <S.ListItem>
-          <S.LinkedPage to="/">Início</S.LinkedPage>
+          <S.LinkedPage to="/">Home</S.LinkedPage>
         </S.ListItem>
 
         <S.ListItem>
-          <S.LinkedPage to="/create">Criar</S.LinkedPage>
+          <S.LinkedPage to="/create">Create</S.LinkedPage>
         </S.ListItem>
 
         <S.ListItem>
-          <S.LinkedPage to="/deleteall">Deletar Tudo</S.LinkedPage>
+          <S.LinkedPage to="/deleteall">Delete All</S.LinkedPage>
         </S.ListItem>
 
         <S.ListItem>
-          <S.LinkedPage to="/about">Sobre</S.LinkedPage>
+          <S.LinkedPage to="/about">About</S.LinkedPage>
         </S.ListItem>
 
       </S.List>

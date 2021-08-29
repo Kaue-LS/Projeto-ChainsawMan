@@ -6,7 +6,7 @@ export default function Card(props){
 
         <S.CardArea>
             <S.CardImage src={props.url} alt={props.name}/>;
-            <S.Name>{props.name}</S.Name>
+            <S.Name className='name'>{props.name}</S.Name>
         </S.CardArea>
     )
 

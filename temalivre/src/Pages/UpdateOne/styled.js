@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 
 export const Area= styled.div`
-  border: gray 10px solid;
+  border: darkorange 10px ridge;
   border-radius: 24px;
   box-shadow: black 0px 0px 20px;
 `;
@@ -11,10 +11,12 @@ export const Form = styled.form`
   display: flex;
   justify-content: center;
   flex-direction: column;
+
 `;
 
 export const Label = styled.label `
   font-size: 1.3em;
+  
 `;
 
 export const Input = styled.input`
@@ -42,7 +44,7 @@ export const Select = styled.select`
 `;
 
 export const Button = styled.button`
-  background-color: #e76a24;
+  background-color: red;
   color: #ffffff;
   font-size: 1.2em;
   padding: 0.4rem;
@@ -56,11 +58,11 @@ export const Button = styled.button`
   transition: 200ms;
 
   &:hover {
-    background-color: #b15019;
+    background-color:  	#800000;
   }
 `;
 export const Plus = styled.button`
-  background-color: #e76a24;
+  background-color: green;
   color: #ffffff;
   font-size: 1.2em;
   padding: 0.4rem;
@@ -75,6 +77,6 @@ export const Plus = styled.button`
   
 
   &:hover {
-    background-color: #b15019;
+    background-color: #006400;
   }
 `;

@@ -1,10 +1,12 @@
 import styled from "styled-components";
+import '../font-to-a-chainsaw/Font.scss'
 
 export const CardArea=styled.div`
 display: flex;
-background:linear-gradient( #8FBC8F,#1C1C1C );
- margin: 1rem;
- padding: 0.8rem;
+background:linear-gradient( aqua ,black);
+border:10px ridge antiquewhite;
+ margin: 1rem 1rem;
+ padding: 0.8rem 0.5rem;
 align-items: center;
 justify-content: center;
 flex-wrap: wrap;
@@ -22,11 +24,20 @@ export const CardImage=styled.img`
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    &:hover{
+        border-color: yellow;
+        
+
+    }
 
 `;
 export const Name=styled.h3`
-    color:#e79a12;
-    text-align: center;
-    font-weight: bolder;
-    font-size: 1.8em;
+    letter-spacing: 10px;
+    font-family: Chainsaw;
+    color:#FFD700;
+    ;
+    
+    font-size: 2.5rem;
+
+  
 `;

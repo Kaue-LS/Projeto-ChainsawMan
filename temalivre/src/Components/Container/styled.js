@@ -1,7 +1,12 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-    max-width: 70%;
+    align-self:center;
+    max-width: 80%;
 
-    margin: 1rem auto;
+    margin:1rem 5rem;
+    @media(max-width: 880px) {
+        margin:1rem auto;
+
+  }
 `;

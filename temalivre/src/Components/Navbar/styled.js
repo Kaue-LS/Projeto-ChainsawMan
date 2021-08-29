@@ -5,7 +5,7 @@ export const Navbar = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100vw;
+  width: 100%;
   background-color: #1C1C1C;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
   padding: 0 2rem;
@@ -17,10 +17,9 @@ export const Navbar = styled.div`
 `;
 
 export const Img = styled.img`
-  width: 8rem;
+  width: 6rem;
   height: 3rem;
   padding: 0.2rem 0;
-  box-shadow: yellow 0px 0px 10px inset ;
   transition: 200ms;
   &:hover{ 
     padding: 0 1rem;
