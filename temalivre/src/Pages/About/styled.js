@@ -4,7 +4,8 @@ export const Area= styled.div`
     margin: 2rem 0rem;
     padding:2rem 2rem;
       background-color: gray;
-    border:5px solid orange;
+      border:0.5rem ridge orange;
+    border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.85) 0px 5px 15px;
 
 `;
