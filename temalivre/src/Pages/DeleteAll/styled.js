@@ -12,6 +12,7 @@ export const ButtonArea =styled.div`
     padding:1rem 0;
 `;
 export const Area =styled.div`
+    border: 5px ridge orange ;
    
 `;
 export const ButtonDelete =styled.button`

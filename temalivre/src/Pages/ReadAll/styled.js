@@ -11,7 +11,7 @@ export const CardArea= styled.div`
 export const Linked= styled(Link)`
     text-decoration: none;
 `;
-export const Empty= styled.h3`
+export const Empty= styled.div`
     background-color: #ffffff;
     padding: 0.5rem;
     margin-top: 0.5rem;
@@ -20,11 +20,14 @@ export const Empty= styled.h3`
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    font-size:33px;
 
 `;
 export const Img= styled.img`
 
 background-color: aliceblue;
 width: 40%;
+@media(max-width:800px){
+    width: 100%;  
+  
+  }
 `;

@@ -109,7 +109,7 @@ export default function Create() {
 
         { contract.map((value,i)=>(
           <>
-          <S.Label htmlFor="contract">Contract{i+1}</S.Label>
+          <S.Label key={i+Math.random(1,12)} htmlFor="contract">Contract{i+1}</S.Label>
           <S.Select value={value} key={i} id="contract" onChange={e => setContract(contract.map((value,j)=>{
             if(i===j) value = e.target.value;
             return value;

@@ -5,7 +5,7 @@ export const Text= styled(Paragraph)`
     text-align:center;
     background-color: whitesmoke;
 `;
-export const Name= styled.p`
+export const Name= styled.span`
   font-family: Chainsaw;
   font-size: 3rem;
   

@@ -6,7 +6,7 @@ import Loading from '../../Components/Loading/Loading'
 import * as S from './styled'
 export default function DeleteOne(props) {
   
-    console.log(props.location.state)
+    // console.log(props.location.state)
     const item=props.location.state
 
     const history = useHistory();

@@ -44,7 +44,7 @@ export default function ReadOne(props){
             <S.Info>Specie:    <span>{item.specie}</span></S.Info>
             <S.Info>Contract:  
                  {item.contract.map((e)=>(
-                <S.Contract>-{e}</S.Contract>
+                <S.Contract key={e}>-{e}</S.Contract>
                  ))
             }
             </S.Info>

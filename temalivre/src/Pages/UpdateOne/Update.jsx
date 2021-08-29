@@ -54,7 +54,7 @@ export default function Update(props) {
             <Loading></Loading>
     ):(
     <S.Area className='plain'>
-      <Title>Update character:</Title>
+      <Title >Update character:</Title>
 
       <S.Form onSubmit={submitHandler}>
 
