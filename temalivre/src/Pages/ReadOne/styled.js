@@ -4,6 +4,7 @@ export const FormImg= styled.div`
 border:10px ridge orange;
 border-radius: 10px;
 width: 80vw;
+box-shadow: #000000ba -10px 10px 10px;
 
 display: flex;
 
@@ -41,14 +42,15 @@ display: flex;
   }
 `;
 export const Label = styled.h3`
+padding: 0px 10px;
     font-family: Chainsaw;
     font-size: 6rem;
     letter-spacing: 5px;
     color:	#FDD10f;
 `;
 export const Desc= styled.div`
-background-color: #ffffffba;
-border: 5px ridge;
+background-color: #000000ba;
+border: 5px ridge orangered;
     width: 50%;
     display: flex;
     flex-direction: column;
@@ -65,6 +67,7 @@ export const Image= styled.img`
 
 `;
 export const Info = styled.h3`
+    color:yellow;
     padding: 5px 20px;
     font-size: 2rem;
     @media(max-width:800px){
@@ -91,8 +94,7 @@ export const DeleteButton =styled.button`
     }
 `;
 export const EditButton = styled.button`
-background-color: green;
-    color:white;
+background-color: greenyellow;
     margin:1rem 2rem;
     font-size:1.2rem;
     padding:0.4rem 2rem;
@@ -108,9 +110,11 @@ background-color: green;
 `;
 export const ShowButton = styled.button`
 background:none;
+color:orange;
 font-size: 2rem;
+transition: 200ms;
 &:hover{
-    background-color: white;
+   padding: 0px 10px;
 }
 `;
 export const Buttons= styled.div`
@@ -126,6 +130,7 @@ margin:0 2rem;
 
 `;
 export const Contract= styled.p`
+color:orange;
 font-size: 1.6rem;
 width:75%;
 word-spacing:2px;

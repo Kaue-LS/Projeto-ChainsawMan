@@ -62,8 +62,7 @@ export const Button = styled.button`
   }
 `;
 export const Plus = styled.button`
-  background-color: green;
-  color: #ffffff;
+  background-color: greenyellow;
   font-size: 1.2em;
   padding: 0.4rem;
   margin: 1rem 0 2rem 0;

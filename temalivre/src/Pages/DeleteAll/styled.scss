@@ -1,9 +1,11 @@
 .delete{
     background-image: url('./background.jpg');
-    background-size: 100% 140%;
-    width: 80vw;
+    background-size: 100% 160%;
     height: 80vh;
-    border:5px ridge orange;
+    border:0.5rem ridge orange;
+    border-radius: 10px;
+    width: 80vw;
+    box-shadow: #000000ba -10px 10px 10px;
     
     
 }

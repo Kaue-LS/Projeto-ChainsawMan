@@ -12,7 +12,6 @@ export const ButtonArea =styled.div`
     padding:1rem 0;
 `;
 export const Area =styled.div`
-    border: 5px ridge orange ;
    
 `;
 export const ButtonDelete =styled.button`
@@ -32,8 +31,7 @@ export const ButtonDelete =styled.button`
 `;
 
 export const ButtonCancel =styled.button`
-background-color: green;
-    color:white;
+background-color: greenyellow;
     font-size:1.2rem;
     padding:0.4rem 1rem;
     border-radius:0.5rem;

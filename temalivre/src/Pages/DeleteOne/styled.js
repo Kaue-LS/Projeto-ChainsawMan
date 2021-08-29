@@ -8,6 +8,8 @@ export const Text= styled(Paragraph)`
 export const Name= styled.span`
   font-family: Chainsaw;
   font-size: 3rem;
+  color: #FFD700;
+  padding:0px 10px
   
 `;
 export const ButtonArea =styled.div`
@@ -35,8 +37,7 @@ export const ButtonDelete =styled.button`
 `;
 
 export const ButtonCancel =styled.button`
-background-color: green;
-    color:white;
+background-color: greenyellow;
     font-size:1.2rem;
     padding:0.4rem 1rem;
     border-radius:0.5rem;
