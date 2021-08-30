@@ -3,7 +3,7 @@ import { useHistory } from 'react-router-dom'
 import * as S from './styled'
 export default function ReadOne(props){
 
- const[mostrar,setMostrar] = useState('Show Status')
+ const[mostrar,setMostrar] = useState('Reveal Status')
     const item = props.location.state
     // const [loading,setLoading] = useState(false)
 
@@ -33,8 +33,8 @@ export default function ReadOne(props){
             <S.Desc>
             <S.Info>Status:   <S.ShowButton onClick={()=> setMostrar(item.status)}>
             {
-                mostrar==='Show Status' ?(
-                 "Show Status" 
+                mostrar==='Reveal Status' ?(
+                 "Reveal Status" 
                 ):(
                     item.status 
                 )
