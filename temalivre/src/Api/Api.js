@@ -1,7 +1,7 @@
 export const Api ={
-  baseUrl: "https://blue-backend-modulo4front.herokuapp.com",
+  baseUrl: "LinkBD",
 
-  authorization: 'kaueleite0506@gmail.com',
+  authorization: 'YourEmail',
 
   readAllUrl :() =>Api.baseUrl + '/',
   readOneUrl:(id)=>Api.baseUrl + '/'+id,
