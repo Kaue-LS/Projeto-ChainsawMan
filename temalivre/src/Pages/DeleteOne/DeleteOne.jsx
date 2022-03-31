@@ -18,7 +18,7 @@ export default function DeleteOne(props) {
     const goToItem=()=>{
         history.push(`/view/${item._id}`,item)
     }
-    const clickHandler = async event =>{
+    const clickHandler = async (event) =>{
         setLoading(true)
         event.preventDefault();
 

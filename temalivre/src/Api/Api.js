@@ -21,6 +21,7 @@ export const Api ={
   return fetch(url, {
     method: 'GET',
     headers: new Headers({
+    
       Authorization: Api.authorization,
     })
   })
